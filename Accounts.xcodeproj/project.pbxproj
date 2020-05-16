@@ -7,13 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F28264B23F092B500EC7B8D /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F28264A23F092B500EC7B8D /* accounts.json */; };
+		9F28264C23F092B500EC7B8D /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F28264A23F092B500EC7B8D /* accounts.json */; };
+		9F28264E23F0932300EC7B8D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28264D23F0932300EC7B8D /* Account.swift */; };
+		9F28265323F094CF00EC7B8D /* AccountsListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28265223F094CF00EC7B8D /* AccountsListPresenterProtocol.swift */; };
+		9F28265523F095B900EC7B8D /* AccountsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28265423F095B900EC7B8D /* AccountsListPresenter.swift */; };
+		9F28265723F0966800EC7B8D /* AccountsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28265623F0966800EC7B8D /* AccountsListInteractor.swift */; };
+		9F28265923F0A62500EC7B8D /* AccountsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28265823F0A62500EC7B8D /* AccountsRouter.swift */; };
+		9F28265B23F0A9BA00EC7B8D /* AccountPresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28265A23F0A9BA00EC7B8D /* AccountPresenterModel.swift */; };
+		9F28268B23F0C68600EC7B8D /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28268A23F0C68600EC7B8D /* Accounts.swift */; };
+		9F30F81224705DEF00D90220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F30F81024705DEF00D90220 /* Localizable.strings */; };
+		9F30F81524705E5000D90220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F30F81024705DEF00D90220 /* Localizable.strings */; };
+		9F30F81624705E5200D90220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F30F81024705DEF00D90220 /* Localizable.strings */; };
 		9F4C9A3223F0687F007EC324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C9A3123F0687F007EC324 /* AppDelegate.swift */; };
 		9F4C9A3423F0687F007EC324 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C9A3323F0687F007EC324 /* SceneDelegate.swift */; };
-		9F4C9A3623F0687F007EC324 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C9A3523F0687F007EC324 /* ViewController.swift */; };
+		9F4C9A3623F0687F007EC324 /* AccountsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C9A3523F0687F007EC324 /* AccountsListViewController.swift */; };
 		9F4C9A3923F0687F007EC324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4C9A3723F0687F007EC324 /* Main.storyboard */; };
 		9F4C9A3B23F06880007EC324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4C9A3A23F06880007EC324 /* Assets.xcassets */; };
 		9F4C9A3E23F06880007EC324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4C9A3C23F06880007EC324 /* LaunchScreen.storyboard */; };
-		9F4C9A4923F06880007EC324 /* AccountsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C9A4823F06880007EC324 /* AccountsTests.swift */; };
+		9F4C9A5523F06BE9007EC324 /* AccountsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C9A5323F06BE9007EC324 /* AccountsListTableViewCell.swift */; };
+		9F4C9A5623F06BE9007EC324 /* AccountsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4C9A5423F06BE9007EC324 /* AccountsListTableViewCell.xib */; };
+		9F4F1AAD23F571A800E53A38 /* AccountsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28265823F0A62500EC7B8D /* AccountsRouter.swift */; };
+		9F5FE4DC23F1F5990090C510 /* AccountsListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FE4DB23F1F5990090C510 /* AccountsListEntity.swift */; };
+		9FB8980923F556B10014C6CD /* AccountsListViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8980823F556B10014C6CD /* AccountsListViewControllerProtocol.swift */; };
+		9FB8980D23F557600014C6CD /* AccountsListEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8980C23F557600014C6CD /* AccountsListEntityProtocol.swift */; };
+		9FB8981523F558A50014C6CD /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB8981423F558A50014C6CD /* NotificationCenter.framework */; };
+		9FB8981823F558A50014C6CD /* AccountsListWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8981723F558A50014C6CD /* AccountsListWidgetViewController.swift */; };
+		9FB8981B23F558A50014C6CD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB8981923F558A50014C6CD /* MainInterface.storyboard */; };
+		9FB8981F23F558A50014C6CD /* AccountsWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FB8981223F558A50014C6CD /* AccountsWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9FB8982523F559660014C6CD /* AccountsListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8982423F559660014C6CD /* AccountsListInteractorProtocol.swift */; };
+		9FB8982A23F55B5A0014C6CD /* AccountsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28265423F095B900EC7B8D /* AccountsListPresenter.swift */; };
+		9FB8982C23F55C080014C6CD /* AccountsListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8982423F559660014C6CD /* AccountsListInteractorProtocol.swift */; };
+		9FB8982D23F55C0B0014C6CD /* AccountsListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28265223F094CF00EC7B8D /* AccountsListPresenterProtocol.swift */; };
+		9FB8982E23F55C490014C6CD /* AccountsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28265623F0966800EC7B8D /* AccountsListInteractor.swift */; };
+		9FB8982F23F55C4E0014C6CD /* AccountPresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28265A23F0A9BA00EC7B8D /* AccountPresenterModel.swift */; };
+		9FB8983023F55C570014C6CD /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28264D23F0932300EC7B8D /* Account.swift */; };
+		9FB8983123F55C5A0014C6CD /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28268A23F0C68600EC7B8D /* Accounts.swift */; };
+		9FB8983223F55C5D0014C6CD /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F28264A23F092B500EC7B8D /* accounts.json */; };
+		9FB8983323F55C600014C6CD /* AccountsListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FE4DB23F1F5990090C510 /* AccountsListEntity.swift */; };
+		9FB8983423F55C630014C6CD /* AccountsListEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8980C23F557600014C6CD /* AccountsListEntityProtocol.swift */; };
+		9FB8983923F55D420014C6CD /* AccountsListViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8980823F556B10014C6CD /* AccountsListViewControllerProtocol.swift */; };
+		9FB8983C23F55D9A0014C6CD /* AccountsListWidgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8983A23F55D9A0014C6CD /* AccountsListWidgetTableViewCell.swift */; };
+		9FB8983D23F55D9A0014C6CD /* AccountsListWidgetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB8983B23F55D9A0014C6CD /* AccountsListWidgetTableViewCell.xib */; };
+		9FC4BE3C23F575C300C34E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4C9A3A23F06880007EC324 /* Assets.xcassets */; };
+		9FC4BE3E23F594D700C34E12 /* AbstractAccountsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4BE3D23F594D700C34E12 /* AbstractAccountsListViewController.swift */; };
+		9FC4BE3F23F594D700C34E12 /* AbstractAccountsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4BE3D23F594D700C34E12 /* AbstractAccountsListViewController.swift */; };
+		9FC4BE4723F5C00600C34E12 /* account2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4BE4423F5C00600C34E12 /* account2.json */; };
+		9FC4BE4823F5C00600C34E12 /* account3.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4BE4523F5C00600C34E12 /* account3.json */; };
+		9FC4BE4923F5C00600C34E12 /* account1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4BE4623F5C00600C34E12 /* account1.json */; };
+		9FC4BE4B23F5C4C400C34E12 /* AccountsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4BE4A23F5C4C400C34E12 /* AccountsTest.swift */; };
+		9FC4BE4D23F5C4E200C34E12 /* AccountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4BE4C23F5C4E200C34E12 /* AccountTest.swift */; };
+		9FC4BE4E23F5C59C00C34E12 /* account1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4BE4623F5C00600C34E12 /* account1.json */; };
+		9FC4BE4F23F5C59E00C34E12 /* account2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4BE4423F5C00600C34E12 /* account2.json */; };
+		9FC4BE5023F5C5A100C34E12 /* account3.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4BE4523F5C00600C34E12 /* account3.json */; };
+		9FC4BE5523F5C8BB00C34E12 /* AccountsListEntityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4BE5423F5C8BB00C34E12 /* AccountsListEntityTest.swift */; };
+		9FC4BE5823F5CC4200C34E12 /* AccountsListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4BE5723F5CC4200C34E12 /* AccountsListInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,20 +72,77 @@
 			remoteGlobalIDString = 9F4C9A2D23F0687F007EC324;
 			remoteInfo = Accounts;
 		};
+		9FB8981D23F558A50014C6CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F4C9A2623F0687F007EC324 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FB8981123F558A50014C6CD;
+			remoteInfo = AccountsWidget;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9FB8982323F558A50014C6CD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9FB8981F23F558A50014C6CD /* AccountsWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9F28264A23F092B500EC7B8D /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
+		9F28264D23F0932300EC7B8D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		9F28265223F094CF00EC7B8D /* AccountsListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListPresenterProtocol.swift; sourceTree = "<group>"; };
+		9F28265423F095B900EC7B8D /* AccountsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListPresenter.swift; sourceTree = "<group>"; };
+		9F28265623F0966800EC7B8D /* AccountsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListInteractor.swift; sourceTree = "<group>"; };
+		9F28265823F0A62500EC7B8D /* AccountsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsRouter.swift; sourceTree = "<group>"; };
+		9F28265A23F0A9BA00EC7B8D /* AccountPresenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenterModel.swift; sourceTree = "<group>"; };
+		9F28268A23F0C68600EC7B8D /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		9F30F7FF2470554C00D90220 /* AccountsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AccountsWidget.entitlements; sourceTree = "<group>"; };
+		9F30F80A24705D1000D90220 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		9F30F80B24705D1000D90220 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9F30F80C24705D1100D90220 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		9F30F81124705DEF00D90220 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9F30F81424705E4600D90220 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9F4C9A2E23F0687F007EC324 /* Accounts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accounts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4C9A3123F0687F007EC324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4C9A3323F0687F007EC324 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F4C9A3523F0687F007EC324 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F4C9A3523F0687F007EC324 /* AccountsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListViewController.swift; sourceTree = "<group>"; };
 		9F4C9A3823F0687F007EC324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F4C9A3A23F06880007EC324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4C9A3D23F06880007EC324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4C9A3F23F06880007EC324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F4C9A4423F06880007EC324 /* AccountsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F4C9A4823F06880007EC324 /* AccountsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTests.swift; sourceTree = "<group>"; };
 		9F4C9A4A23F06880007EC324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4C9A5323F06BE9007EC324 /* AccountsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListTableViewCell.swift; sourceTree = "<group>"; };
+		9F4C9A5423F06BE9007EC324 /* AccountsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountsListTableViewCell.xib; sourceTree = "<group>"; };
+		9F5FE4DB23F1F5990090C510 /* AccountsListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListEntity.swift; sourceTree = "<group>"; };
+		9FB8980823F556B10014C6CD /* AccountsListViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListViewControllerProtocol.swift; sourceTree = "<group>"; };
+		9FB8980C23F557600014C6CD /* AccountsListEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListEntityProtocol.swift; sourceTree = "<group>"; };
+		9FB8981223F558A50014C6CD /* AccountsWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AccountsWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FB8981423F558A50014C6CD /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		9FB8981723F558A50014C6CD /* AccountsListWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListWidgetViewController.swift; sourceTree = "<group>"; };
+		9FB8981A23F558A50014C6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9FB8981C23F558A50014C6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB8982423F559660014C6CD /* AccountsListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListInteractorProtocol.swift; sourceTree = "<group>"; };
+		9FB8982623F55B090014C6CD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		9FB8983A23F55D9A0014C6CD /* AccountsListWidgetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListWidgetTableViewCell.swift; sourceTree = "<group>"; };
+		9FB8983B23F55D9A0014C6CD /* AccountsListWidgetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountsListWidgetTableViewCell.xib; sourceTree = "<group>"; };
+		9FC4BE3B23F5757400C34E12 /* AccountsWidgetRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AccountsWidgetRelease.entitlements; sourceTree = "<group>"; };
+		9FC4BE3D23F594D700C34E12 /* AbstractAccountsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAccountsListViewController.swift; sourceTree = "<group>"; };
+		9FC4BE4423F5C00600C34E12 /* account2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = account2.json; sourceTree = "<group>"; };
+		9FC4BE4523F5C00600C34E12 /* account3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = account3.json; sourceTree = "<group>"; };
+		9FC4BE4623F5C00600C34E12 /* account1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = account1.json; sourceTree = "<group>"; };
+		9FC4BE4A23F5C4C400C34E12 /* AccountsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTest.swift; sourceTree = "<group>"; };
+		9FC4BE4C23F5C4E200C34E12 /* AccountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
+		9FC4BE5423F5C8BB00C34E12 /* AccountsListEntityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListEntityTest.swift; sourceTree = "<group>"; };
+		9FC4BE5723F5CC4200C34E12 /* AccountsListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,14 +160,75 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FB8980F23F558A50014C6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB8981523F558A50014C6CD /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F28264523F0920D00EC7B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FC4BE3D23F594D700C34E12 /* AbstractAccountsListViewController.swift */,
+				9F4C9A5323F06BE9007EC324 /* AccountsListTableViewCell.swift */,
+				9F4C9A5423F06BE9007EC324 /* AccountsListTableViewCell.xib */,
+				9F4C9A3523F0687F007EC324 /* AccountsListViewController.swift */,
+				9FB8980823F556B10014C6CD /* AccountsListViewControllerProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F28264623F0921D00EC7B8D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9F28265A23F0A9BA00EC7B8D /* AccountPresenterModel.swift */,
+				9F28265423F095B900EC7B8D /* AccountsListPresenter.swift */,
+				9F28265223F094CF00EC7B8D /* AccountsListPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9F28264723F0922900EC7B8D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9F28265623F0966800EC7B8D /* AccountsListInteractor.swift */,
+				9FB8982423F559660014C6CD /* AccountsListInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9F28264823F0923200EC7B8D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9F28265823F0A62500EC7B8D /* AccountsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9F28264923F0923900EC7B8D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9F28264D23F0932300EC7B8D /* Account.swift */,
+				9F28264A23F092B500EC7B8D /* accounts.json */,
+				9F28268A23F0C68600EC7B8D /* Accounts.swift */,
+				9F5FE4DB23F1F5990090C510 /* AccountsListEntity.swift */,
+				9FB8980C23F557600014C6CD /* AccountsListEntityProtocol.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		9F4C9A2523F0687F007EC324 = {
 			isa = PBXGroup;
 			children = (
 				9F4C9A3023F0687F007EC324 /* Accounts */,
 				9F4C9A4723F06880007EC324 /* AccountsTests */,
+				9FB8981623F558A50014C6CD /* AccountsWidget */,
+				9FB8981323F558A50014C6CD /* Frameworks */,
 				9F4C9A2F23F0687F007EC324 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +238,7 @@
 			children = (
 				9F4C9A2E23F0687F007EC324 /* Accounts.app */,
 				9F4C9A4423F06880007EC324 /* AccountsTests.xctest */,
+				9FB8981223F558A50014C6CD /* AccountsWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,11 +248,16 @@
 			children = (
 				9F4C9A3123F0687F007EC324 /* AppDelegate.swift */,
 				9F4C9A3323F0687F007EC324 /* SceneDelegate.swift */,
-				9F4C9A3523F0687F007EC324 /* ViewController.swift */,
+				9F28264523F0920D00EC7B8D /* View */,
+				9F28264723F0922900EC7B8D /* Interactor */,
+				9F28264623F0921D00EC7B8D /* Presenter */,
+				9F28264923F0923900EC7B8D /* Entity */,
+				9F28264823F0923200EC7B8D /* Router */,
 				9F4C9A3723F0687F007EC324 /* Main.storyboard */,
 				9F4C9A3A23F06880007EC324 /* Assets.xcassets */,
 				9F4C9A3C23F06880007EC324 /* LaunchScreen.storyboard */,
 				9F4C9A3F23F06880007EC324 /* Info.plist */,
+				9F30F81024705DEF00D90220 /* Localizable.strings */,
 			);
 			path = Accounts;
 			sourceTree = "<group>";
@@ -93,10 +265,63 @@
 		9F4C9A4723F06880007EC324 /* AccountsTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F4C9A4823F06880007EC324 /* AccountsTests.swift */,
+				9FC4BE5623F5CC1400C34E12 /* Interactor */,
+				9FC4BE4023F5BEDC00C34E12 /* Entity */,
 				9F4C9A4A23F06880007EC324 /* Info.plist */,
 			);
 			path = AccountsTests;
+			sourceTree = "<group>";
+		};
+		9FB8981323F558A50014C6CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8982623F55B090014C6CD /* Accounts.framework */,
+				9FB8981423F558A50014C6CD /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FB8981623F558A50014C6CD /* AccountsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9F30F7FF2470554C00D90220 /* AccountsWidget.entitlements */,
+				9FC4BE3B23F5757400C34E12 /* AccountsWidgetRelease.entitlements */,
+				9FB8983E23F55DA30014C6CD /* View */,
+				9FB8981923F558A50014C6CD /* MainInterface.storyboard */,
+				9FB8981C23F558A50014C6CD /* Info.plist */,
+			);
+			path = AccountsWidget;
+			sourceTree = "<group>";
+		};
+		9FB8983E23F55DA30014C6CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8983A23F55D9A0014C6CD /* AccountsListWidgetTableViewCell.swift */,
+				9FB8983B23F55D9A0014C6CD /* AccountsListWidgetTableViewCell.xib */,
+				9FB8981723F558A50014C6CD /* AccountsListWidgetViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FC4BE4023F5BEDC00C34E12 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9FC4BE4623F5C00600C34E12 /* account1.json */,
+				9FC4BE4423F5C00600C34E12 /* account2.json */,
+				9FC4BE4523F5C00600C34E12 /* account3.json */,
+				9FC4BE4C23F5C4E200C34E12 /* AccountTest.swift */,
+				9FC4BE4A23F5C4C400C34E12 /* AccountsTest.swift */,
+				9FC4BE5423F5C8BB00C34E12 /* AccountsListEntityTest.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9FC4BE5623F5CC1400C34E12 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9FC4BE5723F5CC4200C34E12 /* AccountsListInteractorTests.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,10 +334,12 @@
 				9F4C9A2A23F0687F007EC324 /* Sources */,
 				9F4C9A2B23F0687F007EC324 /* Frameworks */,
 				9F4C9A2C23F0687F007EC324 /* Resources */,
+				9FB8982323F558A50014C6CD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9FB8981E23F558A50014C6CD /* PBXTargetDependency */,
 			);
 			name = Accounts;
 			productName = Accounts;
@@ -137,6 +364,23 @@
 			productReference = 9F4C9A4423F06880007EC324 /* AccountsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9FB8981123F558A50014C6CD /* AccountsWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB8982023F558A50014C6CD /* Build configuration list for PBXNativeTarget "AccountsWidget" */;
+			buildPhases = (
+				9FB8980E23F558A50014C6CD /* Sources */,
+				9FB8980F23F558A50014C6CD /* Frameworks */,
+				9FB8981023F558A50014C6CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AccountsWidget;
+			productName = AccountsWidget;
+			productReference = 9FB8981223F558A50014C6CD /* AccountsWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -154,6 +398,9 @@
 						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = 9F4C9A2D23F0687F007EC324;
 					};
+					9FB8981123F558A50014C6CD = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 9F4C9A2923F0687F007EC324 /* Build configuration list for PBXProject "Accounts" */;
@@ -163,6 +410,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 9F4C9A2523F0687F007EC324;
 			productRefGroup = 9F4C9A2F23F0687F007EC324 /* Products */;
@@ -171,6 +419,7 @@
 			targets = (
 				9F4C9A2D23F0687F007EC324 /* Accounts */,
 				9F4C9A4323F06880007EC324 /* AccountsTests */,
+				9FB8981123F558A50014C6CD /* AccountsWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -181,8 +430,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F4C9A3E23F06880007EC324 /* LaunchScreen.storyboard in Resources */,
+				9FC4BE4F23F5C59E00C34E12 /* account2.json in Resources */,
+				9FC4BE4E23F5C59C00C34E12 /* account1.json in Resources */,
+				9F4C9A5623F06BE9007EC324 /* AccountsListTableViewCell.xib in Resources */,
+				9F30F81224705DEF00D90220 /* Localizable.strings in Resources */,
 				9F4C9A3B23F06880007EC324 /* Assets.xcassets in Resources */,
+				9FC4BE5023F5C5A100C34E12 /* account3.json in Resources */,
 				9F4C9A3923F0687F007EC324 /* Main.storyboard in Resources */,
+				9F28264B23F092B500EC7B8D /* accounts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +445,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F30F81624705E5200D90220 /* Localizable.strings in Resources */,
+				9FC4BE4723F5C00600C34E12 /* account2.json in Resources */,
+				9FC4BE4823F5C00600C34E12 /* account3.json in Resources */,
+				9F28264C23F092B500EC7B8D /* accounts.json in Resources */,
+				9FC4BE4923F5C00600C34E12 /* account1.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB8981023F558A50014C6CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F30F81524705E5000D90220 /* Localizable.strings in Resources */,
+				9FB8983D23F55D9A0014C6CD /* AccountsListWidgetTableViewCell.xib in Resources */,
+				9FB8981B23F558A50014C6CD /* MainInterface.storyboard in Resources */,
+				9FC4BE3C23F575C300C34E12 /* Assets.xcassets in Resources */,
+				9FB8983223F55C5D0014C6CD /* accounts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +472,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4C9A3623F0687F007EC324 /* ViewController.swift in Sources */,
+				9F5FE4DC23F1F5990090C510 /* AccountsListEntity.swift in Sources */,
+				9F28265323F094CF00EC7B8D /* AccountsListPresenterProtocol.swift in Sources */,
+				9FC4BE3E23F594D700C34E12 /* AbstractAccountsListViewController.swift in Sources */,
+				9F28264E23F0932300EC7B8D /* Account.swift in Sources */,
+				9FB8982523F559660014C6CD /* AccountsListInteractorProtocol.swift in Sources */,
+				9F28268B23F0C68600EC7B8D /* Accounts.swift in Sources */,
+				9F28265523F095B900EC7B8D /* AccountsListPresenter.swift in Sources */,
+				9F28265923F0A62500EC7B8D /* AccountsRouter.swift in Sources */,
+				9F4C9A3623F0687F007EC324 /* AccountsListViewController.swift in Sources */,
+				9FB8980923F556B10014C6CD /* AccountsListViewControllerProtocol.swift in Sources */,
+				9FB8980D23F557600014C6CD /* AccountsListEntityProtocol.swift in Sources */,
+				9F4C9A5523F06BE9007EC324 /* AccountsListTableViewCell.swift in Sources */,
 				9F4C9A3223F0687F007EC324 /* AppDelegate.swift in Sources */,
+				9F28265723F0966800EC7B8D /* AccountsListInteractor.swift in Sources */,
+				9F28265B23F0A9BA00EC7B8D /* AccountPresenterModel.swift in Sources */,
 				9F4C9A3423F0687F007EC324 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +495,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4C9A4923F06880007EC324 /* AccountsTests.swift in Sources */,
+				9FC4BE5523F5C8BB00C34E12 /* AccountsListEntityTest.swift in Sources */,
+				9FC4BE4B23F5C4C400C34E12 /* AccountsTest.swift in Sources */,
+				9FC4BE4D23F5C4E200C34E12 /* AccountTest.swift in Sources */,
+				9FC4BE5823F5CC4200C34E12 /* AccountsListInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB8980E23F558A50014C6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB8983323F55C600014C6CD /* AccountsListEntity.swift in Sources */,
+				9FB8982F23F55C4E0014C6CD /* AccountPresenterModel.swift in Sources */,
+				9F4F1AAD23F571A800E53A38 /* AccountsRouter.swift in Sources */,
+				9FB8983123F55C5A0014C6CD /* Accounts.swift in Sources */,
+				9FB8982D23F55C0B0014C6CD /* AccountsListPresenterProtocol.swift in Sources */,
+				9FB8983923F55D420014C6CD /* AccountsListViewControllerProtocol.swift in Sources */,
+				9FB8983423F55C630014C6CD /* AccountsListEntityProtocol.swift in Sources */,
+				9FB8982C23F55C080014C6CD /* AccountsListInteractorProtocol.swift in Sources */,
+				9FB8982A23F55B5A0014C6CD /* AccountsListPresenter.swift in Sources */,
+				9FB8981823F558A50014C6CD /* AccountsListWidgetViewController.swift in Sources */,
+				9FB8982E23F55C490014C6CD /* AccountsListInteractor.swift in Sources */,
+				9FB8983023F55C570014C6CD /* Account.swift in Sources */,
+				9FC4BE3F23F594D700C34E12 /* AbstractAccountsListViewController.swift in Sources */,
+				9FB8983C23F55D9A0014C6CD /* AccountsListWidgetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,13 +531,28 @@
 			target = 9F4C9A2D23F0687F007EC324 /* Accounts */;
 			targetProxy = 9F4C9A4523F06880007EC324 /* PBXContainerItemProxy */;
 		};
+		9FB8981E23F558A50014C6CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FB8981123F558A50014C6CD /* AccountsWidget */;
+			targetProxy = 9FB8981D23F558A50014C6CD /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9F30F81024705DEF00D90220 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F30F81124705DEF00D90220 /* es */,
+				9F30F81424705E4600D90220 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		9F4C9A3723F0687F007EC324 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9F4C9A3823F0687F007EC324 /* Base */,
+				9F30F80A24705D1000D90220 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -237,8 +561,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				9F4C9A3D23F06880007EC324 /* Base */,
+				9F30F80B24705D1000D90220 /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9FB8981923F558A50014C6CD /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FB8981A23F558A50014C6CD /* Base */,
+				9F30F80C24705D1100D90220 /* es */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -248,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -308,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -361,6 +697,7 @@
 		9F4C9A4E23F06880007EC324 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9298Q8V8V2;
@@ -369,7 +706,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = talento.Accounts;
+				PRODUCT_BUNDLE_IDENTIFIER = LadanFerriol.Accounts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,6 +716,7 @@
 		9F4C9A4F23F06880007EC324 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9298Q8V8V2;
@@ -387,7 +725,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = talento.Accounts;
+				PRODUCT_BUNDLE_IDENTIFIER = LadanFerriol.Accounts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,6 +776,50 @@
 			};
 			name = Release;
 		};
+		9FB8982123F558A50014C6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AccountsWidget/AccountsWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9298Q8V8V2;
+				INFOPLIST_FILE = AccountsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LadanFerriol.Accounts.AccountsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FB8982223F558A50014C6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AccountsWidget/AccountsWidgetRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9298Q8V8V2;
+				INFOPLIST_FILE = AccountsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LadanFerriol.Accounts.AccountsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -464,6 +846,15 @@
 			buildConfigurations = (
 				9F4C9A5123F06880007EC324 /* Debug */,
 				9F4C9A5223F06880007EC324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB8982023F558A50014C6CD /* Build configuration list for PBXNativeTarget "AccountsWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB8982123F558A50014C6CD /* Debug */,
+				9FB8982223F558A50014C6CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

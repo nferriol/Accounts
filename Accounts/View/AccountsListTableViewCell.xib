@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountsListCell" id="KGk-i7-Jjw" customClass="AccountsListTableViewCell" customModule="Accounts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e0-w5-WCB">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="NMC-aU-PjM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9i-dZ-hVv">
+                        <rect key="frame" x="8" y="37" width="197.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5L3-yb-rNM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aca-7U-USd">
+                        <rect key="frame" x="213.5" y="37" width="98.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aca-7U-USd" secondAttribute="bottom" priority="999" constant="8" id="BMB-dF-Oqg"/>
+                    <constraint firstItem="9e0-w5-WCB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="BMp-y1-YQ8"/>
+                    <constraint firstAttribute="trailing" secondItem="aca-7U-USd" secondAttribute="trailing" constant="8" id="Hvr-hj-GtR"/>
+                    <constraint firstItem="aca-7U-USd" firstAttribute="top" secondItem="9e0-w5-WCB" secondAttribute="bottom" constant="8" id="ah9-bz-Gbb"/>
+                    <constraint firstItem="m9i-dZ-hVv" firstAttribute="top" secondItem="9e0-w5-WCB" secondAttribute="bottom" constant="8" id="ftc-Jt-IEj"/>
+                    <constraint firstAttribute="bottom" secondItem="m9i-dZ-hVv" secondAttribute="bottom" priority="999" constant="8" id="gay-Hf-D8k"/>
+                    <constraint firstItem="aca-7U-USd" firstAttribute="width" secondItem="m9i-dZ-hVv" secondAttribute="width" multiplier="0.5" id="jje-F0-ToI"/>
+                    <constraint firstAttribute="trailing" secondItem="9e0-w5-WCB" secondAttribute="trailing" constant="8" id="rKj-hH-G9r"/>
+                    <constraint firstItem="9e0-w5-WCB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="t1K-d6-gIr"/>
+                    <constraint firstItem="aca-7U-USd" firstAttribute="leading" secondItem="m9i-dZ-hVv" secondAttribute="trailing" constant="8" id="t6T-Vo-idN"/>
+                    <constraint firstItem="m9i-dZ-hVv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="vqx-Eh-mW6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="balance" destination="aca-7U-USd" id="ycx-EC-rtc"/>
+                <outlet property="iban" destination="m9i-dZ-hVv" id="SlQ-2o-nb1"/>
+                <outlet property="name" destination="9e0-w5-WCB" id="4jg-XZ-tiy"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="-42"/>
+        </tableViewCell>
+    </objects>
+</document>

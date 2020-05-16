@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Accounts List Widget View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="AccountsListWidgetViewController" customModule="AccountsWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="358"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="asQ-Lp-4ly">
+                                <rect key="frame" x="0.0" y="44" width="320" height="264"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="198" id="0CP-Di-PiC"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRf-fK-eor">
+                                <rect key="frame" x="0.0" y="316" width="320" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="AYf-sk-xBt"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="footerButtonPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="JBo-6g-mVu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="asQ-Lp-4ly" secondAttribute="trailing" id="2gm-bN-Vbw"/>
+                            <constraint firstItem="asQ-Lp-4ly" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="3k5-Yj-SfC"/>
+                            <constraint firstItem="asQ-Lp-4ly" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="ZKa-EG-u9g"/>
+                            <constraint firstItem="vRf-fK-eor" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" priority="999" id="afJ-Zs-ptY"/>
+                            <constraint firstItem="vRf-fK-eor" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="hq3-DY-V5L"/>
+                            <constraint firstItem="vRf-fK-eor" firstAttribute="top" secondItem="asQ-Lp-4ly" secondAttribute="bottom" constant="8" symbolic="YES" id="lCy-9T-6HT"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="vRf-fK-eor" secondAttribute="trailing" id="xSd-UU-rwU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="358"/>
+                    <connections>
+                        <outlet property="footerButton" destination="vRf-fK-eor" id="OHy-tp-Pi6"/>
+                        <outlet property="myTableView" destination="asQ-Lp-4ly" id="NET-zV-yhK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="100"/>
+        </scene>
+    </scenes>
+</document>

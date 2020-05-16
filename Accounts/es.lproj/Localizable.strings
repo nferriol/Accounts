@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Accounts
+
+  Created by Nadal Ferriol on 16/05/2020.
+  Copyright © 2020 Nadal Ferriol. All rights reserved.
+*/
+"Name" = "Nombre";
+"Iban" = "Iban";
+"See all accounts" = "Ver todas las cuentas";
+"See visible accounts" = "Ver cuentas visibles";
