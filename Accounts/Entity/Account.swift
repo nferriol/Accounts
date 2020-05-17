@@ -41,7 +41,7 @@ extension Account: Decodable {
         //Define decorder account number in function to the type
         if let localAccountNumber = try? values.decode(String.self, forKey: .accountNumber) {
             accountNumber = localAccountNumber
-        }else if let localAccountNumber = try? values.decode(Int.self, forKey: .accountNumber) {
+        } else if let localAccountNumber = try? values.decode(Int.self, forKey: .accountNumber) {
             accountNumber = String(localAccountNumber)
         }
         
@@ -60,5 +60,3 @@ extension Account: Decodable {
         targetAmountInCents = try? values.decode(Int.self, forKey: .targetAmountInCents)
     }
 }
-
-

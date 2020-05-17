@@ -11,15 +11,15 @@ import UIKit
 class AccountsRouter: NSObject {
     
     /// Method invoke to get the main storyboard
-    static var mainStoryboard: UIStoryboard{
-        return UIStoryboard(name:"Main",bundle: Bundle.main)
+    static var mainStoryboard: UIStoryboard {
+        return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
     /// Method invoke to configure the account list
     /// - Parameter viewController: account list view controller protocol
     static func configureAccountsList(viewController: AccountsListViewControllerProtocol) {
         
-        var localViewController:AccountsListViewControllerProtocol = viewController
+        var localViewController: AccountsListViewControllerProtocol = viewController
         var accountsListPresenter: AccountsListPresenterProtocol = AccountsListPresenter()
         var accountsListInteractor: AccountsListInteractorProtocol = AccountsListInteractor()
         let accountsListEntity: AccountsListEntityProtocol = AccountsListEntity()

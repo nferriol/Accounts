@@ -9,7 +9,7 @@
 import UIKit
 
 class AccountsListEntity: NSObject, AccountsListEntityProtocol {
-    var accounts:Accounts?
+    var accounts: Accounts?
     
     /// Method invoke to get the accounts array
     func getAccounts() -> [Account]? {
@@ -26,9 +26,9 @@ class AccountsListEntity: NSObject, AccountsListEntityProtocol {
     
     /// Method invoke to get the visible accounts array
     func getVisibleAccounts() -> [Account]? {
-        var returnValue: [Account]? = nil
+        var returnValue: [Account]?
                 
-        if let localAccounts:[Account] = getAccounts() {
+        if let localAccounts: [Account] = getAccounts() {
             let visibleAccounts = localAccounts.filter {
                 $0.isVisible == true
             }
@@ -43,7 +43,7 @@ class AccountsListEntity: NSObject, AccountsListEntityProtocol {
     /// Method invoke to get a account by index
     /// - Parameter index: index of the account
     func getAccount(index: Int) -> Account? {
-        var returnValue: Account? = nil
+        var returnValue: Account?
         
         if accounts == nil {
             _ = getAccounts()
@@ -59,7 +59,7 @@ class AccountsListEntity: NSObject, AccountsListEntityProtocol {
     /// Method invoke to get a visible account by index
     /// - Parameter index: index of the account
     func getVisibleAccount(index: Int) -> Account? {
-        var returnValue:Account? = nil
+        var returnValue: Account?
         
         if accounts == nil {
             _ = getAccounts()

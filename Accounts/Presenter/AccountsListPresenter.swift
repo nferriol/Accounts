@@ -36,9 +36,9 @@ public class AccountsListPresenter: AccountsListPresenterProtocol {
     func getAccountModel(index: Int) -> AccountPresenterModel {
         var returnValue: AccountPresenterModel
         
-        if let localModel:AccountPresenterModel = interactor?.getAccountModel(index: index) {
+        if let localModel: AccountPresenterModel = interactor?.getAccountModel(index: index) {
             returnValue = localModel
-        }else{
+        } else {
             returnValue = AccountPresenterModel(name: "", iban: "", balanceInCents: 0)
         }
         

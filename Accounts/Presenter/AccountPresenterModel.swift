@@ -10,11 +10,11 @@ import Foundation
 
 struct AccountPresenterModel {
     /// Name of the account
-    var name : String
+    var name: String
     /// IBAN of the account
-    var iban : String
+    var iban: String
     /// Balance of the account
-    var balanceInCents : Int
+    var balanceInCents: Int
     
     /// Init account presenter model
     /// - Parameters:

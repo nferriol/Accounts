@@ -12,7 +12,7 @@ import NotificationCenter
 class AccountsListWidgetViewController: AbstractAccountsListViewController, NCWidgetProviding, UITableViewDataSource {
     
     /// Widget height when is expanded
-    let expandedHeight:CGFloat = 256.0
+    let expandedHeight: CGFloat = 256.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,10 +43,16 @@ class AccountsListWidgetViewController: AbstractAccountsListViewController, NCWi
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: AccountsListWidgetTableViewCell
+        let reuseId: String = AccountsListWidgetTableViewCell.reuseId
 
-        cell = tableView.dequeueReusableCell(withIdentifier: AccountsListWidgetTableViewCell.reuseId, for: indexPath) as! AccountsListWidgetTableViewCell
+        let accountsCell = tableView.dequeueReusableCell(withIdentifier: reuseId, for: indexPath)
+        if let localAccountsCell = accountsCell as? AccountsListWidgetTableViewCell {
+            cell = localAccountsCell
+        } else {
+            cell = AccountsListWidgetTableViewCell()
+        }
 
-        let model:AccountPresenterModel? = presenter?.getAccountModel(index: indexPath.row)
+        let model: AccountPresenterModel? = presenter?.getAccountModel(index: indexPath.row)
 
         if let localModel = model {
             cell.configure(model: localModel)

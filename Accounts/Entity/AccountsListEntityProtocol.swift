@@ -11,7 +11,7 @@ import UIKit
 protocol AccountsListEntityProtocol {
     
     /// Accounts of the list
-    var accounts:Accounts? {get set}
+    var accounts: Accounts? {get set}
     
     /// Method invoke to get the accounts array
     func getAccounts() -> [Account]?

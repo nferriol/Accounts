@@ -15,7 +15,7 @@ class AbstractAccountsListViewController: UIViewController, AccountsListViewCont
     @IBOutlet var footerButton: UIButton!
     
     /// Pesenter of the view controller
-    var presenter:AccountsListPresenterProtocol?
+    var presenter: AccountsListPresenterProtocol?
        
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class AbstractAccountsListViewController: UIViewController, AccountsListViewCont
     
     /// Metthod invoke to updata footer button title
     func updateFooterButtonTitle() {
-        let title:String = presenter?.getFooterButtonTitle() ?? ""
+        let title: String = presenter?.getFooterButtonTitle() ?? ""
         footerButton.setTitle(title, for: UIControl.State.normal)
     }
     

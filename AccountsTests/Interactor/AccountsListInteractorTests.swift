@@ -12,7 +12,7 @@ import XCTest
 
 class AccountsListInteractorTests: XCTestCase {
     
-    let interactor:AccountsListInteractor = AccountsListInteractor()
+    let interactor: AccountsListInteractor = AccountsListInteractor()
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

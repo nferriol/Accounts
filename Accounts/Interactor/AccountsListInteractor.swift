@@ -11,9 +11,9 @@ import UIKit
 class AccountsListInteractor: NSObject, AccountsListInteractorProtocol {
     
     /// Presenter of the interactor
-    var presenter:AccountsListPresenterProtocol?
+    var presenter: AccountsListPresenterProtocol?
     /// Entity of the interactor
-    var entity:AccountsListEntityProtocol?
+    var entity: AccountsListEntityProtocol?
     /// Define the visibility of the accounts
     var showOnlyVisible: Bool = false
     
@@ -25,7 +25,7 @@ class AccountsListInteractor: NSObject, AccountsListInteractorProtocol {
             if let localAccounts = entity?.getVisibleAccounts() {
                 numberOfRows = localAccounts.count
             }
-        }else{
+        } else {
             if let localAccounts = entity?.getAccounts() {
                 numberOfRows = localAccounts.count
             }
@@ -37,13 +37,13 @@ class AccountsListInteractor: NSObject, AccountsListInteractorProtocol {
     /// Method invoke to get account presenter model
     /// - Parameter index: index of account
     func getAccountModel(index: Int) -> AccountPresenterModel? {
-        var returnValue: AccountPresenterModel? = nil
+        var returnValue: AccountPresenterModel?
         
-        var myAccount:Account? = nil
+        var myAccount: Account?
         
         if showOnlyVisible {
             myAccount = entity?.getVisibleAccount(index: index)
-        }else{
+        } else {
             myAccount = entity?.getAccount(index: index)
         }
         
@@ -51,9 +51,9 @@ class AccountsListInteractor: NSObject, AccountsListInteractorProtocol {
             let name: String = NSLocalizedString("Name", comment: "")
             let iban: String = NSLocalizedString("Iban", comment: "")
             
-            let accountName:String = name + ": " + (localAccount.accountName ?? "")
-            let accountIban:String = iban + ": " + (localAccount.iban ?? "")
-            let accountBalance:Int = localAccount.accountBalanceInCents ?? 0
+            let accountName: String = name + ": " + (localAccount.accountName ?? "")
+            let accountIban: String = iban + ": " + (localAccount.iban ?? "")
+            let accountBalance: Int = localAccount.accountBalanceInCents ?? 0
 
             let accountModel: AccountPresenterModel = AccountPresenterModel(name: accountName, iban: accountIban, balanceInCents: accountBalance)
                   

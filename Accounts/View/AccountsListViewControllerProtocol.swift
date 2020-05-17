@@ -11,7 +11,7 @@ import UIKit
 protocol AccountsListViewControllerProtocol {
     
     /// Presenter of the view
-    var presenter:AccountsListPresenterProtocol? {get set}
+    var presenter: AccountsListPresenterProtocol? {get set}
     
     /// Method invoke to reload accounts
     func reloadAccounts()

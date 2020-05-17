@@ -18,7 +18,7 @@ class AccountsListWidgetTableViewCell: UITableViewCell {
     @IBOutlet var balance: UILabel!
     
     /// Reuse identifier
-    static let reuseId:String = "AccountsListWidgetCell"
+    static let reuseId: String = "AccountsListWidgetCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

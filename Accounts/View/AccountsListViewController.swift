@@ -18,8 +18,9 @@ class AccountsListViewController: AbstractAccountsListViewController, UITableVie
     
     /// Method invoke to configure the table view
     func configureMyTableView() {
+        let reuseId: String = AccountsListTableViewCell.reuseId
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier: AccountsListTableViewCell.reuseId)
-        myTableView.register(UINib(nibName: "AccountsListTableViewCell", bundle: nil), forCellReuseIdentifier: AccountsListTableViewCell.reuseId)
+        myTableView.register(UINib(nibName: "AccountsListTableViewCell", bundle: nil), forCellReuseIdentifier: reuseId)
         
         myTableView.rowHeight = UITableView.automaticDimension
 
@@ -38,10 +39,16 @@ class AccountsListViewController: AbstractAccountsListViewController, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: AccountsListTableViewCell
-        
-        cell = tableView.dequeueReusableCell(withIdentifier: AccountsListTableViewCell.reuseId, for: indexPath) as! AccountsListTableViewCell
-        
-        let model:AccountPresenterModel? = presenter?.getAccountModel(index: indexPath.row)
+        let reuseId: String = AccountsListTableViewCell.reuseId
+
+        let accountsCell = tableView.dequeueReusableCell(withIdentifier: reuseId, for: indexPath)
+        if let localAccountsCell = accountsCell as? AccountsListTableViewCell {
+            cell = localAccountsCell
+        } else {
+            cell = AccountsListTableViewCell()
+        }
+
+        let model: AccountPresenterModel? = presenter?.getAccountModel(index: indexPath.row)
         
         if let localModel = model {
             cell.configure(model: localModel)
@@ -50,4 +57,3 @@ class AccountsListViewController: AbstractAccountsListViewController, UITableVie
         return cell
     }
 }
-

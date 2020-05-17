@@ -11,9 +11,9 @@ import UIKit
 protocol AccountsListInteractorProtocol {
     
     /// Presenter of the interactor
-    var presenter:AccountsListPresenterProtocol? {get set}
+    var presenter: AccountsListPresenterProtocol? {get set}
     /// Entity of the interactor
-    var entity:AccountsListEntityProtocol? {get set}
+    var entity: AccountsListEntityProtocol? {get set}
     
     /// Method invoke to get number of accounts
     func numberOfAccounts() -> Int
@@ -25,4 +25,3 @@ protocol AccountsListInteractorProtocol {
     /// Method invoke to get the button title
     func getButtonTitle() -> String 
 }
-
