@@ -41,12 +41,12 @@ class AccountsTest: XCTestCase {
             testDecodeAccount1(localAccount1)
         }
 
-        if let localAccount1 = account1 {
-            testDecodeAccount2(localAccount1)
+        if let localAccount2 = account2 {
+            testDecodeAccount2(localAccount2)
         }
 
-        if let localAccount1 = account1 {
-            testDecodeAccount3(localAccount1)
+        if let localAccount3 = account3 {
+            testDecodeAccount3(localAccount3)
         }
 
         XCTAssertEqual(accounts?.failedAccountTypes, "CREDITCARDS")

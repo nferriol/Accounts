@@ -23,7 +23,7 @@ class AccountsListEntityTest: XCTestCase {
     }
 
     func testGetAccounts() {
-        let accounts: [Account]? = entity.getAccounts()
+        let accounts = entity.getAccounts()
         
         XCTAssertNotNil(accounts)
         
@@ -35,7 +35,7 @@ class AccountsListEntityTest: XCTestCase {
     }
        
     func testGetVisibleAccounts() {
-        let accounts: [Account]? = entity.getVisibleAccounts()
+        let accounts = entity.getVisibleAccounts()
            
         XCTAssertNotNil(accounts)
         
@@ -46,9 +46,9 @@ class AccountsListEntityTest: XCTestCase {
     }
        
     func testGetAccount() {
-        let account1: Account? = entity.getAccount(index: 0)
-        let account2: Account? = entity.getAccount(index: 1)
-        let account3: Account? = entity.getAccount(index: 2)
+        let account1 = entity.getAccount(index: 0)
+        let account2 = entity.getAccount(index: 1)
+        let account3 = entity.getAccount(index: 2)
 
         XCTAssertNotNil(account1)
         XCTAssertNotNil(account2)
@@ -60,8 +60,8 @@ class AccountsListEntityTest: XCTestCase {
     }
        
     func testGetVisibleAccount() {        
-        let account1: Account? = entity.getVisibleAccount(index: 0)
-        let account2: Account? = entity.getVisibleAccount(index: 1)
+        let account1 = entity.getVisibleAccount(index: 0)
+        let account2 = entity.getVisibleAccount(index: 1)
 
         XCTAssertNotNil(account1)
         XCTAssertNotNil(account2)

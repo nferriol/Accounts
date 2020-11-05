@@ -65,10 +65,10 @@ class AccountsListInteractorTests: XCTestCase {
     }
     
     func testGetButtonTitle() {
-        XCTAssertEqual(interactor.getButtonTitle(), "Ver cuentas visibles")
+        XCTAssertEqual(interactor.getButtonTitle(), "See visible accounts")
         
         interactor.changeVisibleAccounts()
         
-        XCTAssertEqual(interactor.getButtonTitle(), "Ver todas las cuentas")
+        XCTAssertEqual(interactor.getButtonTitle(), "See all accounts")
     }
 }
